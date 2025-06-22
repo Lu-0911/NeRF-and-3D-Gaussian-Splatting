@@ -91,5 +91,3 @@ project/
 - **NeRF**: 使用TensoRF加速版本，基于张量分解
 - **3D Gaussian**: 简化实现，专注于对比效果
 - **评估指标**: PSNR、SSIM、训练时间
-```
-
