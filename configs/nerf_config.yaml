@@ -1,0 +1,27 @@
+model:
+  type: "tensorf"
+
+tensorf:
+  density_n_comp: 8
+  app_n_comp: 24
+  gridSize: 64
+  lr_init: 0.02
+  lr_basis: 0.001
+  num_epochs: 50
+  log_dir: "./logs/nerf"
+
+data:
+  white_bkgd: true
+  half_res: true
+
+training:
+  N_iters: 10000
+  batch_size: 512
+
+evaluation:
+  eval_interval: 5
+  save_interval: 500
+
+output:
+  basedir: "./logs"
+  expname: "tensorf_experiment"

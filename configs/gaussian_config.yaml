@@ -1,0 +1,26 @@
+model:
+  num_points: 5000
+
+learning_rates:
+  lr_xyz: 0.00016
+  lr_features: 0.0025
+  lr_opacity: 0.05
+  lr_scaling: 0.005
+  lr_rotation: 0.001
+
+training:
+  num_epochs: 100
+  batch_size: 512
+  lr: 0.005
+  log_dir: "./logs/gaussian"
+  eval_interval: 5
+
+evaluation:
+  metrics: ["psnr", "ssim"]
+
+data:
+  data_path: "./data"
+  white_background: true
+
+output:
+  output_dir: "./output/gaussian_splatting"
